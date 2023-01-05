@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Build Tools",
+    "values": [
+      { "value": "Webpack" },
+      { "value": "Grunt" },
+      { "value": "Gulp" },
+      { "value": "Babel" },
+      { "value": "Hardhat" },
+      { "value": "Gatsby" }
+    ]
+  },
+  {
+    "name": "APIs",
+    "values": [{ "value": "GraphQL" }, { "value": "REST" }]
+  },
+  {
+    "name": "Cloud Services",
+    "values": [
+      { "value": "AWS" },
+      { "value": "Azure" },
+      { "value": "Digital Ocean" },
+      { "value": "Aiven" },
+      { "value": "Travis CI" },
+      { "value": "Circle CI" },
+      { "value": "Cloudflare" }
+    ]
+  },
+  {
+    "name": "Databases",
+    "values": [
+      { "value": "Postgres" },
+      { "value": "Mysql" },
+      { "value": "Mongodb" }
+    ]
+  },
+  {
+    "name": "Frameworks",
+    "values": [
+      { "value": "React" },
+      { "value": "React Native" },
+      { "value": "Expo" },
+      { "value": "Angular" },
+      { "value": "NestJS" },
+      { "value": "Material UI" },
+      { "value": "Apollo" },
+      { "value": "RabbitMQ" },
+      { "value": "Laravel" },
+      { "value": "WordPress" }
+    ]
+  },
+  {
+    "name": "Languages",
+    "values": [
+      { "value": "Solidity" },
+      { "value": "Typescript" },
+      { "value": "Bash" },
+      { "value": "Javascript" },
+      { "value": "NodeJS" },
+      { "value": "PHP" },
+      { "value": "ASP.net" },
+      { "value": "HTML5" },
+      { "value": "CSS" }
+    ]
+  }
+]

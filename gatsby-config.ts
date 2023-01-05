@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-transformer-json", "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -28,6 +28,31 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "data",
+      "path": "./src/data/"
+    },
+    __key: "data"
+  },{
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `oxygen\:300,400,700`,
+        `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+      ],
+      display: 'swap'
+    }
+  }
+  ,{
+    resolve: 'gatsby-plugin-react-svg',
+    options: {
+      rule: {
+        include: /assets/
+      }
+    }
   }]
 };
 
