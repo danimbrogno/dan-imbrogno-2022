@@ -22,7 +22,7 @@ export function Qualifications() {
   return (
     <Section>
       <MaxWidth>
-        <SectionTitle>Qualifications</SectionTitle>
+        <SectionTitle>About Me</SectionTitle>
         <List>
           {data.allQualificationsJson.edges.map(({ node }) => (
             <ListItem key={node.id}>{node.value}</ListItem>

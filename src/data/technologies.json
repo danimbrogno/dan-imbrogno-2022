@@ -54,9 +54,9 @@
     "values": [
       { "value": "Solidity" },
       { "value": "Typescript" },
-      { "value": "Bash" },
       { "value": "Javascript" },
       { "value": "NodeJS" },
+      { "value": "Bash" },
       { "value": "PHP" },
       { "value": "ASP.net" },
       { "value": "HTML5" },
