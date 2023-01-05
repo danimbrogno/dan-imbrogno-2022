@@ -3,6 +3,7 @@ import style from "styled-components";
 import Github from "../../../../assets/github-icon.svg";
 import Email from "../../../../assets/email-icon.svg";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Gradient = style.div`
 min-height:100vh;
@@ -58,22 +59,40 @@ const Coin = style.div`
 `;
 
 export const Header: React.FC = () => {
+  const data = useStaticQuery<Queries.HeaderQuery>(graphql`
+    query Header {
+      site {
+        siteMetadata {
+          title
+          description
+          email
+          github
+        }
+      }
+    }
+  `);
+
+  const mailToLink = data.site?.siteMetadata?.email
+    ? `mailto:${data.site.siteMetadata.email}`
+    : "";
+
+  const githubLink = data.site?.siteMetadata?.github
+    ? `https://github.com/${data.site.siteMetadata.github}`
+    : "";
+
   return (
     <Gradient>
       <GradientInside>
         <Coin>
           <StaticImage src="../../../../images/photo.jpeg" alt="Dan Imbrogno" />
         </Coin>
-        <Name>Dan Imbrogno</Name>
-        <Description>
-          Startup CTO and Full Stack Engineer bringing ideas to life with the
-          magic of open source.
-        </Description>
+        <Name>{data.site?.siteMetadata?.title}</Name>
+        <Description>{data.site?.siteMetadata?.description}</Description>
         <Buttons>
-          <Button href="mailto:dan@3vl.ca">
+          <Button href={mailToLink}>
             <Email height="64" width="64" fill="white" />
           </Button>
-          <Button>
+          <Button href={githubLink}>
             <Github height="44" width="44" fill="white" />
           </Button>
         </Buttons>
