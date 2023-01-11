@@ -1,5 +1,5 @@
 import * as React from "react";
-import { WorkItem } from "../../../WorkItem";
+import { WorkItem } from "../shared/WorkItem";
 import { Section } from "../shared/Section";
 import { MaxWidth } from "../../../shared/MaxWidth";
 import { List } from "../../../shared/List";

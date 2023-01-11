@@ -3,17 +3,19 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../../theme";
 import { Main } from "../../shared/Main";
 import { Header } from "./components/Header";
-import { Qualifications } from "./components/Qualifications";
 import { Work } from "./components/Work";
 import { Education } from "./components/Education/Education";
 import { Technologies } from "./components/Technologies/Technologies";
+import { AboutMe } from "./components/AboutMe";
+import { Menu } from "./components/Menu";
 
 export const Index: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Main>
+        <Menu />
         <Header />
-        <Qualifications />
+        <AboutMe />
         <Work />
         <Education />
         <Technologies />

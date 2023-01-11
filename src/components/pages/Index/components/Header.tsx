@@ -1,25 +1,33 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import style from "styled-components";
 import Github from "../../../../assets/github-icon.svg";
 import Email from "../../../../assets/email-icon.svg";
-import { StaticImage } from "gatsby-plugin-image";
+import Cabin from "../../../../images/cabin.svg";
 import { graphql, useStaticQuery } from "gatsby";
+import { List } from "../../../shared/List";
+import { ListItem } from "../../../shared/ListItem";
 
-const Gradient = style.div`
-min-height:100vh;
-background: rgb(2,0,36);
-background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(9,121,78,1) 35%, rgba(7,61,99,1) 100%);
+const Banner = style.div`
+height: 100vh;
+width: 100vw;
+background: #000 url(${Cabin}) no-repeat 100% 0%;
+background-size: cover;
 display: flex;
-align-items: center;
-justify-content: center;
+align-items: flex-start;
+justify-content: flex-start;
 font-size: 2em;
 flex-direction: column;
 color: ${(props) => props.theme.text.primaryColor}};
 `;
 
-const GradientInside = style.div`
-    padding: 4em 2em;
-`;
+const Content = style.div`
+margin: 0 5%;
+width: 40%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;`;
 
 const Name = style.h1`
   font-size:2em;
@@ -48,16 +56,6 @@ const Button = style.a`
   justify-content: center;
 `;
 
-const Coin = style.div`
-  width: 256px;
-  height: 256px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0 0 0 8px rgba(14, 18, 57, 0.5);
-  margin-bottom:2rem
-`;
-
 export const Header: React.FC = () => {
   const data = useStaticQuery<Queries.HeaderQuery>(graphql`
     query Header {
@@ -81,11 +79,8 @@ export const Header: React.FC = () => {
     : "";
 
   return (
-    <Gradient>
-      <GradientInside>
-        <Coin>
-          <StaticImage src="../../../../images/photo.jpeg" alt="Dan Imbrogno" />
-        </Coin>
+    <Banner>
+      <Content>
         <Name>{data.site?.siteMetadata?.title}</Name>
         <Description>{data.site?.siteMetadata?.description}</Description>
         <Buttons>
@@ -96,7 +91,7 @@ export const Header: React.FC = () => {
             <Github height="44" width="44" fill="white" />
           </Button>
         </Buttons>
-      </GradientInside>
-    </Gradient>
+      </Content>
+    </Banner>
   );
 };
