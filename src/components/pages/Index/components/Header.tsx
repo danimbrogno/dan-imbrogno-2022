@@ -50,12 +50,13 @@ const Content = style.div`
 const Name = style.h1`
   font-size:2em;
   font-weight:500;
-  margin: 0.125em 0;
+  margin: 0.125em 0 0.125em 0;
   text-align:center;
   white-space: nowrap;
   `;
 const Description = style.div`
-  font-size: 0.7em;
+  font-size: 0.8em;
+  line-height:1.75em;
   margin: 0.25em 0;
   text-align:center;
 `;
