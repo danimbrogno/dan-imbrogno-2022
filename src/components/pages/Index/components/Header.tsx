@@ -14,26 +14,45 @@ background: #000 url(${Cabin}) no-repeat 100% 0%;
 background-size: cover;
 display: flex;
 align-items: flex-start;
-justify-content: flex-start;
+justify-content: center;
 font-size: 2em;
 flex-direction: column;
 color: ${(props) => props.theme.text.primaryColor}};
+@media (max-width: ${(props) => props.theme.breakPoints.tablet}px) {
+  align-items: center;
+  background: #000 url(${Cabin}) no-repeat 90% 0%;
+  background-size: cover;
+}
 `;
 
 const Content = style.div`
-margin: 0 5%;
-width: 40%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;`;
+@media (max-width: ${(props) => props.theme.breakPoints.tablet}px) {
+  margin: 0 auto;
+  width: 50%;
+}
+@media (max-width: ${(props) => props.theme.breakPoints.laptop}px) {
+  margin: 0 auto;
+  width: 90%;
+  top:0;
+  }
+  width: 40%;
+  margin-left:80px;
+  position: relative;
+  top: -240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+`;
 
 const Name = style.h1`
   font-size:2em;
   font-weight:500;
   margin: 0.125em 0;
   text-align:center;
+  white-space: nowrap;
   `;
 const Description = style.div`
   font-size: 0.7em;

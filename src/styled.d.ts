@@ -13,5 +13,14 @@ declare module 'styled-components' {
         secondaryColor: string;
         tertiaryColor: string;
       }
+      breakPoints: {
+        mobileS: number;
+        mobileM: number;
+        mobileL: number;
+        tablet: number;
+        laptop: number;
+        laptopL: number;
+        desktop: number;
+      }
     }
   }
