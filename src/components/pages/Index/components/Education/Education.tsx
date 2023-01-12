@@ -6,6 +6,16 @@ import { ListItem } from "../../../../shared/ListItem";
 import { SectionTitle } from "../../shared/SectionTitle";
 import { graphql, useStaticQuery } from "gatsby";
 import { EducationItem } from "./components/EducationItem";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(9, 121, 78, 1);
+  border-top: 20px solid #075537;
+  padding: 3em 2em;
+  color: #fff;
+`;
 
 export const Education = () => {
   const data = useStaticQuery<Queries.EducationQuery>(graphql`
@@ -25,7 +35,7 @@ export const Education = () => {
     }
   `);
   return (
-    <Section>
+    <Container id="education">
       <MaxWidth>
         <SectionTitle>Education</SectionTitle>
         <List>
@@ -36,6 +46,6 @@ export const Education = () => {
           ))}
         </List>
       </MaxWidth>
-    </Section>
+    </Container>
   );
 };

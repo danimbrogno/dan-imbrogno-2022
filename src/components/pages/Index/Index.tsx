@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../../theme";
 import { Main } from "../../shared/Main";
 import { Header } from "./components/Header";
-import { Work } from "./components/Work";
+import { Work } from "./components/Work/Work";
 import { Education } from "./components/Education/Education";
 import { Technologies } from "./components/Technologies/Technologies";
 import { AboutMe } from "./components/AboutMe";

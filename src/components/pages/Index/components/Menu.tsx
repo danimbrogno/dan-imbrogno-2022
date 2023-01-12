@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { List } from "../../../shared/List";
 import { ListItem } from "../../../shared/ListItem";
 import style from "styled-components";
 import { animated, useSpring, useScroll } from "@react-spring/web";
+import useScrollTo from "react-spring-scroll-to-hook";
 
+const height = 85;
 const MenuContainer = style.div`
     position: fixed;
     width: 100%;
     z-index: 99;
+    height: ${height}px;
 `;
 
 const MenuPad = style.div`
@@ -36,6 +39,12 @@ export function Menu() {
     },
   });
 
+  const { scrollTo } = useScrollTo();
+
+  const handleClick = (selector: string) => () => {
+    scrollTo(document.querySelector(selector), -1 * height + 1);
+  };
+
   return (
     <MenuContainer>
       <animated.div
@@ -46,16 +55,30 @@ export function Menu() {
         <MenuPad>
           <List direction="row">
             <ListItem>
-              <MenuButton href="#">About Me</MenuButton>
+              <MenuButton onClick={handleClick("#about-me")} href="#about-me">
+                About Me
+              </MenuButton>
             </ListItem>
             <ListItem>
-              <MenuButton href="#">Experience</MenuButton>
+              <MenuButton
+                onClick={handleClick("#experience")}
+                href="#experience"
+              >
+                Experience
+              </MenuButton>
             </ListItem>
             <ListItem>
-              <MenuButton href="#">Education</MenuButton>
+              <MenuButton onClick={handleClick("#education")} href="#education">
+                Education
+              </MenuButton>
             </ListItem>
             <ListItem>
-              <MenuButton href="#">Technologies</MenuButton>
+              <MenuButton
+                onClick={handleClick("#technologies")}
+                href="#technologies"
+              >
+                Technologies
+              </MenuButton>
             </ListItem>
           </List>
         </MenuPad>

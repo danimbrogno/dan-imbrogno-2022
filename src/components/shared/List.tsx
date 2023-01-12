@@ -7,6 +7,7 @@ margin: 0;
 padding: 0;
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 `;
 const ListRowStyle = style.ul`
 list-style:none;
@@ -14,6 +15,7 @@ margin: 0;
 padding: 0;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 `;
 
 export const List: React.FC<

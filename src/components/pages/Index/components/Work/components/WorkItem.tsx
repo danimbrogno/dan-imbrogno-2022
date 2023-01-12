@@ -33,32 +33,38 @@ const Year = styled.p`
   margin: 0.5em;
   font-size: 1em;
 `;
+const Position = styled.p`
+  margin: 0.5em;
+  font-size: 0.75em;
+`;
 const Location = styled.p`
   margin: 0.5em;
   font-size: 0.75em;
 `;
 
-export interface EducationItemProp {
+export interface WorkItemProp {
   item: {
     startDate: string | null;
     endDate: string | null;
-    institution: string | null;
+    company: string | null;
+    title: string | null;
     location: string | null;
     points: readonly (string | null)[] | null;
   };
 }
-export const EducationItem: React.FC<EducationItemProp> = ({
-  item: { startDate, institution, endDate, location, points },
+export const WorkItem: React.FC<WorkItemProp> = ({
+  item: { startDate, company, endDate, location, points, title },
 }) => {
   return (
     <Container>
       <MaxWidth>
         <Header>
-          <Title>{institution}</Title>
+          <Title>{company}</Title>
           <Details>
             <Year>
               <DateDisplay date={startDate} /> - <DateDisplay date={endDate} />
             </Year>
+            <Position>{title}</Position>
             <Location>{location}</Location>
           </Details>
         </Header>

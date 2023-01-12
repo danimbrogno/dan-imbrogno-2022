@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import { Section } from "../shared/Section";
 import { MaxWidth } from "../../../shared/MaxWidth";
+import { SectionTitle } from "../shared/SectionTitle";
 
 const Gradient = style.div`
   min-height:100vh;
@@ -41,8 +42,6 @@ const Text = style.p`
 `;
 
 const Coin = style.div`
-  // position: relative;
-  // top: -100px;
   width: 256px;
   height: 256px;
   border-radius: 50%;
@@ -50,7 +49,6 @@ const Coin = style.div`
   margin: 0 auto;
   box-shadow: 0 0 0 8px rgba(14, 18, 57, 0.5);
   margin: 4em auto;
-  // margin-bottom:-100px;
 `;
 
 export const AboutMe: React.FC = () => {
@@ -68,7 +66,7 @@ export const AboutMe: React.FC = () => {
   `);
 
   return (
-    <Gradient>
+    <Gradient id="about-me">
       <GradientInside>
         <Coin>
           <StaticImage src="../../../../images/photo.jpeg" alt="Dan Imbrogno" />
