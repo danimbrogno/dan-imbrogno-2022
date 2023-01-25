@@ -1,21 +1,30 @@
 [
   {
-    "value": "Comfortable participating in early stage startups in a founding role."
+    "value": "Comfortable participating in early stage startups in a founding role.",
+    "icon": "../images/graph-icon.svg"
   },
   {
-    "value": "Experience managing developer teams and leading projects."
+    "value": "Experience managing developer teams and leading projects.",
+    "icon": "../images/project-icon.svg"
   },
   {
-    "value": "Self motivated, life-long learner and serial adopter of new technologies."
+    "value": "Self motivated, life-long learner and serial adopter of new technologies.",
+    "icon": "../images/stairs-icon.svg"
   },
   {
-    "value": "Able to work independently or as part of a team."
+    "value": "Able to work independently or as part of a team.",
+    "icon": "../images/puzzle-icon.svg"
   },
   {
-    "value": "Can apply creative and critical thinking to solve problems."
+    "value": "Can apply creative and critical thinking to solve problems.",
+    "icon": "../images/gears-icon.svg"
   },
-  { "value": "Excellent written and oral communication skills." },
   {
-    "value": "Over 14 years experience designing, developing and deploying web applications."
+    "value": "Excellent written and oral communication skills.",
+    "icon": "../images/hello-icon.svg"
+  },
+  {
+    "value": "Over 14 years experience designing, developing and deploying web applications.",
+    "icon": "../images/clouds-icon.svg"
   }
 ]

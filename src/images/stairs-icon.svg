@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1280 960" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="1121.92" id="Filter" width="1243.13" x="-39.0327" y="-40.0381">
+<feDropShadow dx="-28.7342" dy="20.4598" flood-color="#ffffff" flood-opacity="0.4" in="SourceGraphic" result="Shadow" stdDeviation="17.8425"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="1032.7" id="Filter_2" width="1153.92" x="34.3076" y="-15.8916">
+<feDropShadow dx="-28.7342" dy="20.4598" flood-color="#ffffff" flood-opacity="0.4" in="SourceGraphic" result="Shadow" stdDeviation="17.8425"/>
+</filter>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="960" width="1280" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<g filter="url(#Filter)" vectornator:shadowAngle="2.52283" vectornator:shadowColor="#ffffff" vectornator:shadowOffset="35.274" vectornator:shadowOpacity="0.4" vectornator:shadowRadius="35.6849">
+<path d="M1168.31 120.89L1025.35 12.2957M1026.33 14.0008L869.977 12.2957L866.464 175.998L679.193 175.998L679.193 331.945L491.921 331.945L491.921 518.983L304.65 518.983L304.65 678.647L117.315 678.647L120.829 842.933M262.814 947.704L111.689 832.261L111.689 832.261L111.689 832.261L111.689 832.261M259.301 783.419L117.315 678.647M446.635 783.419L304.65 678.647M446.635 638.869L304.65 534.097M633.907 605.276L490.947 514.868M640.725 451.09L491.921 354.937M821.178 423.062L681.141 332.654M834.227 286.516L682.501 182.701M1009.98 277.969L868.969 171.287M1020.34 120.89L877.386 12.2957M1168.31 118.773L1011.96 117.067L1008.45 280.77L821.178 280.77L821.178 436.717L633.907 436.717L633.907 623.755L446.635 623.755L446.635 783.419L259.301 783.419L262.814 947.704L1168.31 927.883L1168.31 118.773ZM1168.31 118.773L1020.34 12.2957" fill="none" filter="url(#Filter_2)" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0.333333" stroke-width="8.08181" vectornator:shadowAngle="2.52283" vectornator:shadowColor="#ffffff" vectornator:shadowOffset="35.274" vectornator:shadowOpacity="0.4" vectornator:shadowRadius="35.6849"/>
+</g>
+</g>
+</svg>

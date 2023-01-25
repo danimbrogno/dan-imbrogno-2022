@@ -1,10 +1,9 @@
 import React from "react";
 import style from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import { Section } from "../shared/Section";
-import { MaxWidth } from "../../../shared/MaxWidth";
-import { SectionTitle } from "../shared/SectionTitle";
+import CloudsIcon from "../../../../assets/clouds-icon.svg";
 
 const Gradient = style.div`
   min-height:100vh;
@@ -34,11 +33,12 @@ const Qualification = style.div`
   text-align: center;
   flex: 1 0 33.333%;
   max-width: 320px;
+  margin-top: 40px;         
 `;
 
 const Text = style.p`
   display: block;
-  padding: 2em 1em;
+  padding: 1em 1em 2em 1em;
 `;
 
 const Coin = style.div`
@@ -51,6 +51,11 @@ const Coin = style.div`
   margin: 4em auto;
 `;
 
+const Icon = style.img`
+  max-width:128px;
+  margin: 10px;
+`;
+
 export const AboutMe: React.FC = () => {
   const data = useStaticQuery<Queries.QualificationsQuery>(graphql`
     query Qualifications {
@@ -59,6 +64,9 @@ export const AboutMe: React.FC = () => {
           node {
             id
             value
+            icon {
+              publicURL
+            }
           }
         }
       }
@@ -75,6 +83,7 @@ export const AboutMe: React.FC = () => {
           <Qualifications>
             {data.allQualificationsJson.edges.map(({ node }) => (
               <Qualification key={node.id}>
+                {node.icon?.publicURL && <Icon src={node.icon.publicURL} />}
                 <Text>{node.value}</Text>
               </Qualification>
             ))}

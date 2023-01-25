@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1280 960" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="626.256" id="Filter" width="1394.53" x="-86.0015" y="187.332">
+<feDropShadow dx="-28.7342" dy="20.4598" flood-color="#ffffff" flood-opacity="0.4" in="SourceGraphic" result="Shadow" stdDeviation="17.8425"/>
+</filter>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="960" width="1280" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M11.071 488.251C280.295 439.602 307.21 242.457 194.776 281.889C87.2368 319.605 120.229 567.572 120.229 649.254C120.229 668.479 98.1958 724.79 119.513 724.79C137.266 724.79 160.636 530.075 232.05 517.194C321.977 500.974 233.935 692.193 314.584 721.286C397.112 751.057 545.975 583.695 474.328 500.387C435.797 455.585 327.727 572.253 380.039 660.175C412.891 715.39 489.968 724.79 547.952 685.733C642.208 622.244 687.248 431.847 685.845 334.824C684.627 250.537 627.518 222.602 592.688 260.347C551.782 304.674 566.861 703.127 693.421 707.745C841.648 713.154 901.852 438.528 905.974 339.219C908.1 288.003 858.982 208.883 818.666 243.85C767.758 288.003 735.923 572.622 804.464 673.264C896.975 809.1 1049.23 599.627 999.535 515.006C961.677 450.536 928.764 662.979 1012.29 693.795C1254.59 783.189 1196.04 460.704 1114.81 460.704C998.441 460.704 1116.15 671.407 1268.93 529.91" fill="none" filter="url(#Filter)" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0.333333" stroke-width="47.4644" vectornator:shadowAngle="2.52283" vectornator:shadowColor="#ffffff" vectornator:shadowOffset="35.274" vectornator:shadowOpacity="0.4" vectornator:shadowRadius="35.6849"/>
+</g>
+</svg>
