@@ -5,6 +5,7 @@ import { ListItem } from "../../../../shared/ListItem";
 import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 import { SectionTitle } from "../../shared/SectionTitle";
+import { MaxWidth } from "../../../../shared/MaxWidth";
 
 const Container = styled.div`
   display: flex;
@@ -35,14 +36,16 @@ export const Work = () => {
   `);
   return (
     <Container id="experience">
-      <SectionTitle>Experience</SectionTitle>
-      <List>
-        {data.allWorkJson.edges.map(({ node }) => (
-          <ListItem key={node.id}>
-            <WorkItem item={node} />
-          </ListItem>
-        ))}
-      </List>
+      <MaxWidth>
+        <SectionTitle>Experience</SectionTitle>
+        <List>
+          {data.allWorkJson.edges.map(({ node }) => (
+            <ListItem key={node.id}>
+              <WorkItem item={node} />
+            </ListItem>
+          ))}
+        </List>
+      </MaxWidth>
     </Container>
   );
 };
