@@ -23,10 +23,12 @@ const Content = styled.div``;
 const Title = styled.h4`
   margin: 0;
   font-size: 2em;
+  flex: 1;
 `;
 
 const Details = styled.div`
   text-align: right;
+  flex: 2;
 `;
 
 const Year = styled.p`

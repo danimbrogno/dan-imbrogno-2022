@@ -25,6 +25,7 @@ export const Education = () => {
           node {
             id
             institution
+            degree
             startDate
             endDate
             location
