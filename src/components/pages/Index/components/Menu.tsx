@@ -19,10 +19,15 @@ const MenuPad = style.div`
 
 const MenuButton = style.a`
   font-size: 1rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
+  display: block;
   font-weight: 400;
   color: ${(props) => props.theme.text.primaryColor};
   text-decoration: none;
+  @media (max-width: ${(props) => props.theme.breakPoints.tablet}px) {
+    font-size: 0.825rem;
+    padding: 0.25rem .5rem;
+  }
 `;
 export function Menu() {
   const [menuStyle, menuStyleApi] = useSpring(() => ({

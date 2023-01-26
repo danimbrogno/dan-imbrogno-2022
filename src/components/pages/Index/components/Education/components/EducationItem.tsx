@@ -32,10 +32,12 @@ const Details = styled.div`
 const Year = styled.p`
   margin: 0.5em;
   font-size: 1em;
+  white-space: nowrap;
 `;
 const Location = styled.p`
   margin: 0.5em;
   font-size: 0.75em;
+  white-space: nowrap;
 `;
 
 export interface EducationItemProp {

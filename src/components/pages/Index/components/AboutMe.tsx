@@ -44,10 +44,11 @@ const Text = style.p`
 const Coin = style.div`
   width: 256px;
   height: 256px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  box-shadow: 0 0 0 8px rgba(14, 18, 57, 0.5);
+  border: 8px solid rgba(14, 18, 57, 0.5);
   margin: 4em auto;
 `;
 

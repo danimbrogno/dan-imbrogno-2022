@@ -4,12 +4,11 @@ import Github from "../../../../assets/github-icon.svg";
 import Email from "../../../../assets/email-icon.svg";
 import Cabin from "../../../../images/cabin.svg";
 import { graphql, useStaticQuery } from "gatsby";
-import { List } from "../../../shared/List";
-import { ListItem } from "../../../shared/ListItem";
 
 const Banner = style.div`
 height: 100vh;
 width: 100vw;
+min-height:480px;
 background: #000 url(${Cabin}) no-repeat 100% 0%;
 background-size: cover;
 display: flex;
@@ -37,8 +36,6 @@ const Content = style.div`
   }
   width: 40%;
   margin-left:80px;
-  position: relative;
-  top: -240px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -53,12 +50,18 @@ const Name = style.h1`
   margin: 0.125em 0 0.125em 0;
   text-align:center;
   white-space: nowrap;
+  @media (max-width: ${(props) => props.theme.breakPoints.tablet}px) {
+   font-size:1.5em;
+  }
   `;
 const Description = style.div`
   font-size: 0.8em;
   line-height:1.75em;
   margin: 0.25em 0;
   text-align:center;
+  @media (max-width: ${(props) => props.theme.breakPoints.tablet}px) {
+    font-size:0.6em;
+   }
 `;
 const Buttons = style.div`
   display: flex;
