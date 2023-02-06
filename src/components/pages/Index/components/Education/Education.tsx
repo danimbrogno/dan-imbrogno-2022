@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Section } from "../../shared/Section";
 import { MaxWidth } from "../../../../shared/MaxWidth";
 import { List } from "../../../../shared/List";
 import { ListItem } from "../../../../shared/ListItem";
-import { SectionTitle } from "../../shared/SectionTitle";
-import { graphql, useStaticQuery } from "gatsby";
+import { SectionTitle } from "../../../../shared/SectionTitle";
 import { EducationItem } from "./components/EducationItem";
 import styled from "styled-components";
+import { Parallax } from "react-scroll-parallax";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Container = styled.div`
   display: flex;
@@ -18,8 +18,8 @@ const Container = styled.div`
 `;
 
 export const Education = () => {
-  const data = useStaticQuery<Queries.EducationQuery>(graphql`
-    query Education {
+  const data = useStaticQuery<Queries.EducationDataQuery>(graphql`
+    query EducationData {
       allEducationJson(sort: [{ endDate: DESC }]) {
         edges {
           node {
@@ -35,18 +35,21 @@ export const Education = () => {
       }
     }
   `);
+
   return (
-    <Container id="education">
-      <MaxWidth>
-        <SectionTitle>Education</SectionTitle>
-        <List>
-          {data.allEducationJson.edges.map(({ node }) => (
-            <ListItem key={node.id}>
-              <EducationItem item={node} />
-            </ListItem>
-          ))}
-        </List>
-      </MaxWidth>
-    </Container>
+    <Parallax id="education" speed={0}>
+      <Container>
+        <MaxWidth>
+          <SectionTitle>Education</SectionTitle>
+          <List>
+            {data.allEducationJson.edges.map(({ node }) => (
+              <ListItem key={node.id}>
+                <EducationItem item={node} />
+              </ListItem>
+            ))}
+          </List>
+        </MaxWidth>
+      </Container>
+    </Parallax>
   );
 };

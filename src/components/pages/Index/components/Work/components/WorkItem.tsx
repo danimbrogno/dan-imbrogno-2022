@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { DateDisplay } from "../../../../../DateDisplay";
+import { DateDisplay } from "../../../../../shared/DateDisplay";
 import { MaxWidth } from "../../../../../shared/MaxWidth";
+import { DisplayDateRange } from "../../../../../shared/DisplayDateRange";
 
 const Container = styled.div`
   display: flex;
@@ -66,7 +67,7 @@ export const WorkItem: React.FC<WorkItemProp> = ({
           <Title>{company}</Title>
           <Details>
             <Year>
-              <DateDisplay date={startDate} /> - <DateDisplay date={endDate} />
+              <DisplayDateRange startDate={startDate} endDate={endDate} />
             </Year>
             <Position>{title}</Position>
             <Location>{location}</Location>

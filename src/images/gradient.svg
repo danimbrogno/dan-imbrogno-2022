@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 3768.47 3437.35" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="0" x2="3768.47" y1="0" y2="3437.35">
+<stop offset="0" stop-color="#020024"/>
+<stop offset="0.475207" stop-color="#09794e"/>
+<stop offset="1" stop-color="#073d63"/>
+<stop offset="1" stop-color="#000000"/>
+</linearGradient>
+</defs>
+<g id="Layer-1">
+<path d="M0 0L3768.47 0L3768.47 3437.35L0 3437.35L0 0Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</svg>
