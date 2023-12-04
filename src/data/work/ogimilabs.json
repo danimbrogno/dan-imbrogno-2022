@@ -1,0 +1,12 @@
+{
+  "company": "Ogimi Labs",
+  "startDate": "2022-10-18T00:00:00.000",
+  "endDate": "2023-12-01T00:00:00.000",
+  "title": "Independent Contractor",
+  "location": "Remote",
+  "points": [
+    "Developed React web app, React Native mobile app and NodeJS backend for AI powered meditation coach",
+    "Built audio service to composite ambient tracks with dynamically fetched audio from text-to-speech API",
+    "Implemented CI/CD pipeline using GKE and Github Actions"
+  ]
+}
