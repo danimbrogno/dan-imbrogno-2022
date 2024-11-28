@@ -12,7 +12,6 @@ import style from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 
 const Banner = style.div`
-  pointer-events: none;
   min-height:480px;
   display: flex;
   align-items: flex-start;
